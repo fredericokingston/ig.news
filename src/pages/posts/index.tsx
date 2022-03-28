@@ -42,7 +42,7 @@ export default function Posts({ posts }: PostProps ) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const prismic = getPrismicClient()
+  /* const prismic = getPrismicClient()
 
   const response = await prismic.query([
     Prismic.predicates.at('document.type', 'post')
@@ -62,9 +62,9 @@ export const getStaticProps: GetStaticProps = async () => {
         year: 'numeric'
       })
     }
-  })
+  }) */
 
   return {
-    props: {posts}
+    props: null
   }
 }
