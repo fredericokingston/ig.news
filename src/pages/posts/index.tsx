@@ -65,6 +65,6 @@ export const getStaticProps: GetStaticProps = async () => {
   }) */
 
   return {
-    props: null
+    props: { posts: null }
   }
 }
